@@ -6,14 +6,16 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    background-color: #fecc44;
+    background-color: #fff;
     padding-top: 0;
     padding-bottom: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-p{
+
+p {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 .app__footer-links {
     width: 100%;
     display: flex;
@@ -26,32 +28,34 @@ p{
 .app__footer-links_logo,
 .app__footer-links_work {
     text-align: center;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .app__footer-links_logo img:first-child {
     margin-bottom: 0.5rem;
-    height: 200px;
-    width: 200px;
+    height: 150px; /* Adjusted size to fit better with the icons */
+    width: 150px;
+    object-fit: cover; /* Ensure the image maintains its aspect ratio */
 }
 
-
 .app__footer-links_icons {
-    margin-top: 0.5rem;
-    justify-content: space-between;
-    align-items: center;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Space between icons */
 }
 
 .app__footer-links_icons svg {
     color: var(--color-white);
-    margin: 01.3rem;
-    font-size: 80px;
+    font-size: 50px; /* Adjust the size as needed */
     cursor: pointer;
 }
 
 .app__footer-links_icons svg:hover {
-    color: var(--color-golden);
+    color: var(--color-primary); /* Change color on hover to match your theme */
 }
 
 .app__footer-headtext {

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Testimonial from "@/components/Testimonial";
 import Footer from "@/components/footer/Footer";
 
 export default function Home() {
@@ -15,14 +14,8 @@ export default function Home() {
       <h1 className="text-gray-500 text-5xl font-bold ml-40">its finest. 
       </h1>
     </div>
-
-    <Testimonial/>
     <Footer/>
-   
-
-   
    </div>
-
   ) 
    ;
 

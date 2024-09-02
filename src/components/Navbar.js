@@ -7,10 +7,10 @@ import {
   MenuItem,
   MenuItems,
 } from "@headlessui/react";
-import background from "/public/Images/background.png"
+import background from "/public/Images/background.png";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import Logo from "../images/logo.jpg"
+import Logo from "../images/logo.jpg";
 import Image from "next/image";
 const navigation = [
   { name: "About Us", href: "/AboutUs", current: false },
@@ -25,9 +25,8 @@ function classNames(...classes) {
 export default function Navbar() {
   return (
     <Disclosure as="nav" className="bgImg bg-white relative">
-     
       <div className="h-[200px] pt-[100px] mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-      <Image alt="background" src={background} className="absolute ml-[500px] h-[600px] w-[900px] mt-[-100px]"/>
+        {/* <Image alt="background" src={background} className="absolute ml-[500px] h-[600px] w-[900px] mt-[-100px]  mx-auto"/> */}
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}

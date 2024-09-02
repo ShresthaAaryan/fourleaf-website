@@ -18,7 +18,7 @@ const Footer = () => (
   <div className="app__footer section__padding" id="login">
 
     <div className="app__footer-links">
-      <div className="app__footer-links_contact" id='contact'>
+      <div className="app__footer-links_work" id='contact'>
         <h1 className="app__footer-headtext">Contact Us</h1>
         <h3 className="p__opensans">474 Railway Parade, Alawah, NSW AU 2218</h3>
         <h4 className="p__opensans">ghumti.au@gmail.com</h4>
@@ -28,7 +28,7 @@ const Footer = () => (
 
       <div className="app__footer-links_logo">
         <Image src={Logo} alt="footer_logo" width={150} height={150} />
-        {/* <p className="p__opensans">&quot;The best way to find yourself is to lose yourself in the service of others.&quot;</p> */}
+        <p className="p__opensans">&quot;The best way to find yourself is to lose yourself in the service of others.&quot;</p>
         <div className="app__footer-links_icons">
           <FiFacebook onClick={face} />
           <FiInstagram onClick={insta} />
@@ -51,7 +51,6 @@ const Footer = () => (
           width: '100%',
           borderColor : 'black'
       }}/>
-      <h4 className="p__opensans">Designed and Maintained by Aadi Marketing Solutions</h4>
     </div>
 
   </div>
