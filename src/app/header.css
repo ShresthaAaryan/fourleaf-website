@@ -1,0 +1,56 @@
+ /* FOr MObile */
+ @media(max-width: 480px) 
+{
+    .big-text h1 {
+        font-size: 50px; 
+        margin-left: 16px;
+        text-align: center;
+        align-content: center;
+    }
+
+    .big-text span {
+        font-size: 24px;
+        text-align: center;
+      }
+
+
+    
+}
+
+/* FOr Ipad */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .big-text h1 {
+      font-size: 40px; 
+      margin-left: 24px;
+
+    }
+  
+    .big-text span {
+      font-size: 40px;
+    }
+  }
+
+  
+  /* For Windows */
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .big-text h1 {
+      font-size: 64px; 
+      margin-left: 96px;
+    }
+  
+    .big-text span {
+      font-size: 64px;
+    }
+  }
+  
+  /* For Extended Screens  */
+  @media only screen and (min-width: 1201px) {
+    .big-text h1 {
+      font-size: 80px; 
+      margin-left: 128px;
+    }
+  
+    .big-text span {
+      font-size: 80px;
+    }
+  }
