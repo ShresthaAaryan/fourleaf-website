@@ -1,0 +1,16 @@
+ /* For desktop */
+ @media(min-width: 1024) 
+{
+    .uppertestimonial {
+        flex-direction: column;
+
+    }
+    .texttestimonial{
+        font-size: 24px;
+    }
+    
+}
+
+
+/*For mobile*/
+
