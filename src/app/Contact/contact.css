@@ -4,7 +4,7 @@
 }
 
 .contact-header {
-  background-image: url(''); 
+  /* background-image: url('../../images/');  */
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -50,7 +50,7 @@ textarea {
 
 .button {
   padding: 10px;
-  background-color: red;
+  background-color: rgb(4, 107, 8);
   color: white;
   border: none;
   cursor: pointer;

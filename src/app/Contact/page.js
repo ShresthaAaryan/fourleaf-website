@@ -35,7 +35,7 @@ function Contact() {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://backendghumti.onrender.com/send-email', {
+      const response = await fetch('http://localhost:3001/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ function Contact() {
               title="Google Map"
               loading="lazy"
               allowFullScreen
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206.80484588751565!2d151.1137807024653!3d-33.9699870808224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b9742fa4ec5f%3A0x8a034c2ae3f4bbf7!2sGhumti%20Kitchen%20-%202218%20AU!5e0!3m2!1sen!2sin!4v1713981201616!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d883.1149048660317!2d85.32103663226579!3d27.703091928055542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb199f55d5f795%3A0xa6dbb597faeda135!2sFour%20Leaf%20Clover%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1725788575275!5m2!1sen!2sin"
               allow="fullscreen"
               aria-hidden="false"
               tabIndex="0"

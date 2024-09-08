@@ -32,6 +32,8 @@ p {
     align-items: center;
     display: flex;
     flex-direction: column;
+    height: 15rem;
+    width: 40rem;
 }
 
 .app__footer-links_logo img:first-child {
