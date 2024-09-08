@@ -93,6 +93,7 @@ p {
     }
 
     .app__footer-links_contact,
+    .app__footer-links_logo,
     .app__footer-links_work {
         margin: 2rem 0;
         width: 100%;

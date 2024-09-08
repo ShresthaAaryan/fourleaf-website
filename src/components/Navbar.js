@@ -11,6 +11,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Logo from "../images/logo.jpg";
 import Image from "next/image";
+import { usePathname } from 'next/navigation';
 
 const navigation = [
   { name: "About Us", href: "/AboutUs", current: false },
@@ -23,16 +24,16 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
-  const router = useRouter(); 
-
+  const router = useRouter();
+  const pathname = usePathname()
   return (
     <Disclosure as="nav" className="bgImg bg-white relative">
       <div className="h-[200px] pt-[100px] mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         {/* Conditionally render the background image only on the homepage */}
-        {router.pathname === "/" && (
+        {pathname === "/" && (
           <Image
             alt="background"
-            src={Image}
+            src={background}
             className="hidden sm:block absolute ml-[400px] h-[600px] w-[1000px] mt-[-100px] mx-auto"
           />
         )}
@@ -85,7 +86,7 @@ export default function Navbar() {
 
           <div className="absolute inset-y-0 right-0 mt-[-20px] flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <Link href="/Contact">
-              <button className=" bg-green-500 border-solid border-[1.5px] border-green-500 text-white font-bold h-[50px] w-[120px] rounded-md">
+              <button className=" bg-green-500 border-solid border-[1.5px] border-green-500 text-white font-bold h-[40px] w-[100px] rounded-md">
                 Contact us
               </button>
             </Link>
