@@ -14,7 +14,7 @@ export default function Testimonial() {
                 </div>
                 <div className="flex-4 texttestimonial flex flex-col w-full lg:w-[900px] text-center lg:text-left mt-6 lg:mt-0 p-4">
                     <p className="text-base lg:text-lg">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         <br />
                     </p>
                     <h4 className="block mt-4 lg:text-lg text-right font-bold lg:text-center justify-center">
@@ -25,9 +25,9 @@ export default function Testimonial() {
             <div className="flex flex-col-reverse lg:flex-row items-center lg:space-x-12 justify-center">
                 <div className="flex-4 texttestimonial flex flex-col w-full lg:w-[900px] text-center lg:text-left mt-6 lg:mt-0 p-4">
                     <p className="text-base lg:text-lg">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         <br />
-                    </p>                        
+                    </p>
                     <h4 className="block mt-4 lg:text-lg font-bold text-right lg:text-center">
                         Person Two, Company Name
                     </h4>
