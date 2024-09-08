@@ -1,17 +1,17 @@
+'use client'
+
 import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuItems,
 } from "@headlessui/react";
+import { useRouter } from "next/navigation"; // Use next/navigation for app directory routing
 import background from "/public/Images/background.png";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Logo from "../images/logo.jpg";
 import Image from "next/image";
+
 const navigation = [
   { name: "About Us", href: "/AboutUs", current: false },
   { name: "Services", href: "/Services", current: false },
@@ -23,13 +23,21 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+  const router = useRouter(); 
+
   return (
     <Disclosure as="nav" className="bgImg bg-white relative">
       <div className="h-[200px] pt-[100px] mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        {/* <Image alt="background" src={background} className="absolute ml-[500px] h-[600px] w-[900px] mt-[-100px]  mx-auto"/> */}
+        {/* Conditionally render the background image only on the homepage */}
+        {router.pathname === "/" && (
+          <Image
+            alt="background"
+            src={Image}
+            className="hidden sm:block absolute ml-[400px] h-[600px] w-[1000px] mt-[-100px] mx-auto"
+          />
+        )}
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            {/* Mobile menu button*/}
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-green-500 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
@@ -47,11 +55,10 @@ export default function Navbar() {
             {/* logo */}
             <div className="flex flex-shrink-0 items-center">
               <Link href="/">
-                {" "}
                 <Image
                   alt="Your Company"
                   src={Logo}
-                  className="h-[100px] w-auto mt-[-30px]"
+                  className="h-[130px] w-auto mt-[-50px]"
                 />
               </Link>
             </div>
@@ -66,7 +73,7 @@ export default function Navbar() {
                       item.current
                         ? " text-green-500"
                         : "text-green-500 hover:bg-green-200 hover:text-green-900",
-                      "rounded-md px-3 py-2 text-sm  font-bold text-[20px]"
+                      "rounded-md px-3 py-2 text-sm  font-bold text-[21px] text-center"
                     )}
                   >
                     {item.name}
@@ -77,9 +84,11 @@ export default function Navbar() {
           </div>
 
           <div className="absolute inset-y-0 right-0 mt-[-20px] flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <button className=" bg-green-500 border-solid border-[1.5px] border-green-500 text-white font-bold h-[50px] w-[120px] rounded-md">
-              Contact us
-            </button>
+            <Link href="/Contact">
+              <button className=" bg-green-500 border-solid border-[1.5px] border-green-500 text-white font-bold h-[50px] w-[120px] rounded-md">
+                Contact us
+              </button>
+            </Link>
           </div>
         </div>
       </div>

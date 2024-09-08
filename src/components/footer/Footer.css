@@ -36,26 +36,26 @@ p {
 
 .app__footer-links_logo img:first-child {
     margin-bottom: 0.5rem;
-    height: 150px; /* Adjusted size to fit better with the icons */
+    height: 150px; 
     width: 150px;
-    object-fit: cover; /* Ensure the image maintains its aspect ratio */
+    object-fit: cover; 
 }
 
 .app__footer-links_icons {
     margin-top: 1rem;
     display: flex;
     justify-content: center;
-    gap: 1.5rem; /* Space between icons */
+    gap: 1.5rem; 
 }
 
 .app__footer-links_icons svg {
     color: var(--color-white);
-    font-size: 50px; /* Adjust the size as needed */
+    font-size: 50px;
     cursor: pointer;
 }
 
 .app__footer-links_icons svg:hover {
-    color: var(--color-primary); /* Change color on hover to match your theme */
+    color: var(--color-primary); 
 }
 
 .app__footer-headtext {
@@ -64,11 +64,9 @@ p {
     font-weight: 550;
     letter-spacing: 0.04em;
     text-transform: capitalize;
-    font-size: 50px;
     line-height: 41.6px;
-    margin-bottom: 2rem;
-    padding-top: 7rem;
-    margin: 0 8rem;
+    padding: 2rem;
+    font-size: 3rem;
 }
 
 .footer__copyright {
@@ -89,6 +87,7 @@ p {
     .app__footer-links {
         align-items: center;
         flex-direction: column;
+        padding: 2rem;
     }
 
     .app__footer-links_contact,
@@ -97,15 +96,15 @@ p {
         width: 100%;
     }
     .app__footer-headtext {
-        padding: 0;
+        padding: 2rem;
     }
 }
 
-@media screen and (max-width: 350px) {
-    .app__footer-links_logo img:first-child {
-        width: 80%;
-    }
+@media screen and (max-width: 480px) {
     .app__footer-headtext {
         padding: 0;
+    }
+    .app__footer-links{
+        padding-top: 0;
     }
 }

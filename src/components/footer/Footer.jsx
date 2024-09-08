@@ -18,7 +18,7 @@ const Footer = () => (
   <div className="app__footer section__padding" id="login">
 
     <div className="app__footer-links">
-      <div className="app__footer-links_work" id='contact'>
+      <div className="app__footer-links_contact" id='contact'>
         <h1 className="app__footer-headtext">Contact Us</h1>
         <h3 className="p__opensans">474 Railway Parade, Alawah, NSW AU 2218</h3>
         <h4 className="p__opensans">ghumti.au@gmail.com</h4>

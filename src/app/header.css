@@ -1,56 +1,42 @@
- /* FOr MObile */
+ /* FOr Mobile */
  @media(max-width: 480px) 
 {
-    .big-text h1 {
+    .big-text .bigg {
         font-size: 50px; 
-        margin-left: 16px;
+        text-align: center;
+        align-content: center;
+        margin: 0;
         text-align: center;
         align-content: center;
     }
-
-    .big-text span {
-        font-size: 24px;
-        text-align: center;
-      }
-
-
-    
 }
 
-/* FOr Ipad */
+/* For Ipad */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .big-text h1 {
+    .big-text .bigg {
       font-size: 40px; 
-      margin-left: 24px;
-
-    }
-  
-    .big-text span {
-      font-size: 40px;
+      margin-left: 0;
+      text-align: center;
     }
   }
 
   
   /* For Windows */
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
-    .big-text h1 {
-      font-size: 64px; 
-      margin-left: 96px;
-    }
-  
-    .big-text span {
-      font-size: 64px;
+    .big-text  .bigg{
+      text-align: center;
+      margin: 0;
     }
   }
   
   /* For Extended Screens  */
   @media only screen and (min-width: 1201px) {
-    .big-text h1 {
-      font-size: 80px; 
-      margin-left: 128px;
+    .big-text .bigg {
+      font-size: 5rem; 
     }
   
     .big-text span {
-      font-size: 80px;
+      font-size: 5rem;
+      text-align: center;
     }
   }
