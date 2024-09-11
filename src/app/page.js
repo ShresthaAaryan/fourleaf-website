@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Footer from "@/components/footer/Footer";
 import Testimonial from "@/components/Testimonial/Testimonial";
+import Reviews from "@/components/Reviews/reviews";
 import './header.css';
+
 export default function Home() {
   return(
   <div className="big-text">
@@ -19,7 +21,9 @@ export default function Home() {
         <br></br><br></br><br></br>
     </div>
     <Testimonial/>
-    <br></br><br></br>
+    <br></br>
+    <Reviews/>
+    <br></br>
     <Footer/>
    </div>
   ) 
