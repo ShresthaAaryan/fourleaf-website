@@ -3,15 +3,18 @@
 import Logo from "../../images/logo.jpg"
 import Image from "next/image";
 import React from 'react';
-import { FiInstagram, FiFacebook } from 'react-icons/fi';
+import { FiInstagram, FiFacebook, FiLinkedin} from 'react-icons/fi';
 import './FooterOverlay';
 import './Footer.css';
 
 function face(){
-  window.open('https://www.facebook.com', '_blank');
+  window.open('https://www.facebook.com/fourleafclovernp', '_blank');
 }
 function insta(){
-  window.open('https://instagram.com','_blank');
+  window.open('https://www.instagram.com/fourleafclovernp/','_blank');
+}
+function linkedin(){
+  window.open('https://www.linkedin.com/company/four-leaf-clover-pvt-ltd/','_blank');
 }
 
 const Footer = () => (
@@ -21,8 +24,8 @@ const Footer = () => (
       <div className="app__footer-links_contact" id='contact'>
         <h1 className="app__footer-headtext">Contact Us</h1>
         <h3 className="p__opensans">Ichhamati Galli 28, Kathmandu 44600, Nepal</h3>
-        <h4 className="p__opensans">ghumti.au@gmail.com</h4>
-        <h4 className="p__opensans">+977 9843027055</h4>
+        <h4 className="p__opensans">marketing@fourleafclover.com.np</h4>
+        <h4 className="p__opensans">+977 980 - 8571158</h4>
         {/* <h4 className='p__opensans'>ABN: 63638902593</h4> */}
       </div>
 
@@ -32,6 +35,7 @@ const Footer = () => (
         <div className="app__footer-links_icons">
           <FiFacebook onClick={face} />
           <FiInstagram onClick={insta} />
+          <FiLinkedin onClick={linkedin} />
         </div>
       </div>
 

@@ -3,6 +3,7 @@ import Footer from "@/components/footer/Footer";
 import Testimonial from "@/components/Testimonial/Testimonial";
 import Reviews from "@/components/Reviews/reviews";
 import './header.css';
+import Body from "@/components/body/Body";
 
 export default function Home() {
   return(
@@ -20,6 +21,7 @@ export default function Home() {
         </h1>
         <br></br><br></br><br></br>
     </div>
+    <Body/>
     <Testimonial/>
     <br></br>
     <Reviews/>
