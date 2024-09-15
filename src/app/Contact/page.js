@@ -1,6 +1,5 @@
 "use client";
-
-import Navbar from '@/components/Navbar';
+import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/footer/Footer';
 import React, { useState } from 'react';
 import './contact.css';
@@ -59,7 +58,7 @@ function Contact() {
   };
 
   return (
-    <div className="contact-page">
+    <div className="contact-page bg-gray-50">
       <div className="contact-header">
           <h1>Contact Us</h1>
       </div>

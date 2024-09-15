@@ -5,14 +5,14 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from "@headlessui/react";
-import { useRouter } from "next/navigation"; // Use next/navigation for app directory routing
+import { useRouter } from "next/navigation"; 
 import background from "/public/Images/background.png";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import Logo from "../images/logo.jpg";
+import Logo from "../../images/logo.jpg";
 import Image from "next/image";
 import { usePathname } from 'next/navigation';
-
+import "./Navbar.css"
 const navigation = [
   { name: "About Us", href: "/AboutUs", current: false },
   { name: "Services", href: "/Services", current: false },
@@ -27,14 +27,14 @@ export default function Navbar() {
   const router = useRouter();
   const pathname = usePathname()
   return (
-    <Disclosure as="nav" className="bgImg bg-white relative">
-      <div className="h-[200px] pt-[100px] mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <Disclosure as="nav" className="bgImg bg-white ">
+      <div className="h-[175px] pt-[100px] mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         {/* Conditionally render the background image only on the homepage */}
         {pathname === "/" && (
           <Image
             alt="background"
             src={background}
-            className="hidden sm:block absolute ml-[400px] h-[600px] w-[1000px] mt-[-100px] mx-auto"
+            className="hidden sm:block absolute ml-[400px] h-[53rem] w-[1000px] mt-[-100px] mx-auto  ola"
           />
         )}
         <div className="relative flex h-16 items-center justify-between">
@@ -59,13 +59,13 @@ export default function Navbar() {
                 <Image
                   alt="Your Company"
                   src={Logo}
-                  className="h-[130px] w-auto mt-[-50px]"
+                  className="h-[130px] w-auto mt-[-50px] img1"
                 />
               </Link>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                {navigation.map((item) => (
+              {navigation.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
@@ -79,7 +79,7 @@ export default function Navbar() {
                   >
                     {item.name}
                   </a>
-                ))}
+              ))}
               </div>
             </div>
           </div>

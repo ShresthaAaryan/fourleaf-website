@@ -1,0 +1,30 @@
+
+  
+  /* Responsive adjustments - tablet and smaller devices only */
+  @media screen and (max-width: 768px) {
+    .heading-primary {
+      font-size: 2rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .body-container{
+        margin: 2rem;
+        margin-top: 8rem;
+    }
+
+    .heading-primary {
+      font-size: 2.5rem;
+      padding: 0;
+    }
+  
+    .description {
+      font-size: 1rem;
+      margin: 10px auto;
+    }
+  }
+  

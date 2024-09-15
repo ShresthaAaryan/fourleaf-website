@@ -14,11 +14,10 @@
 /* For Ipad */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .big-text .bigg {
-      font-size: 40px; 
       margin-left: 0;
       text-align: center;
     }
-  }
+}
 
   
   /* For Windows */
@@ -26,6 +25,10 @@
     .big-text  .bigg{
       text-align: center;
       margin: 0;
+      font-size: 5rem;
+    }
+    .ola{
+      display: none;
     }
   }
   

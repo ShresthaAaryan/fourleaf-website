@@ -7,20 +7,24 @@ import Body from "@/components/body/Body";
 
 export default function Home() {
   return(
-  <div className="big-text">
-      <h1 className=" text-green-400 text-8xl font-bold mt-10 ml-40 bigg">Operational 
+  <div className="big-text pd-4 bg-gray-50">
+    <div className="head-container">
+      <h1 className=" text-green-400 text-10xl font-bold mt-10 ml-40 bigg">
+        Operational 
       </h1>
-      <h1 className="text-green-400 text-8xl font-bold bigg ml-40">
+      <h1 className="text-green-400 text-10xl font-bold bigg ml-40">
         Efficiency
       </h1>
-    <div className="big-text">
+      <div className="big-text">
         <h1 className="font-bold bigg">
-          <span className="text-gray-500 text-5xl text-center mt-10 ml-40 bigg"> at</span>
+          <span className="text-gray-500 text-6xl text-center mt-10 ml-40 bigg"> at</span>
         </h1>
-        <h1 className="text-gray-500 text-5xl font-bold  ml-40 bigg">its finest. 
+        <h1 className="text-gray-500 text-6xl font-bold  ml-40 bigg">
+          its finest. 
         </h1>
-        <br></br><br></br><br></br>
+      </div>
     </div>
+
     <Body/>
     <Testimonial/>
     <br></br>
