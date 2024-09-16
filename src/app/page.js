@@ -17,7 +17,7 @@ export default function Home() {
       </h1>
       <div className="big-text">
         <h1 className="font-bold bigg">
-          <h1 className="text-gray-500 text-6xl mt-10 ml-40 bigg p-10 pl-0 pt-0"> at</h1>
+          <span className="text-gray-500 text-6xl mt-10 ml-40 bigg p-10 pl-0 pt-0"> at</span>
         </h1>
         <h1 className="text-gray-500 text-6xl font-bold  ml-40 bigg">
           its finest. 

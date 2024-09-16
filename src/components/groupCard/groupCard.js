@@ -6,7 +6,7 @@ export default function GroupCard() {
     <div className="flex flex-wrap">
       {data && data.map((item)=>{
         return(
-        <div key={item.Department} className="flex-grow basis-52">
+        <div key={item.Department} className="flex-grow">
         <CardsWithDet item={item}/>
       </div>)
       })}

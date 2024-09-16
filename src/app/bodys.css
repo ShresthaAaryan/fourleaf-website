@@ -27,7 +27,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 800;
     pointer-events: none;
     opacity: 0.5;
@@ -44,7 +44,24 @@
     opacity: 1;
   }
   
-  .card:hover .department-header, 
-  .card:hover span {
+  .card:hover .department-header{
     opacity: 0;
+  }
+
+  .cardBox {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .cardBox {
+      width: 15rem;
+      height: 10rem;
+    }
   }
