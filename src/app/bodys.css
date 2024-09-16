@@ -22,7 +22,7 @@
     padding: 20px;
     cursor: pointer;
   }
-  .card h2, span {
+  .card .department-header{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -32,19 +32,7 @@
     pointer-events: none;
     opacity: 0.5;
   }
-  
-  span {
-    top: 75%;
-  }
-  
-  .card .content h3 {
-    font-size: 3rem;
-    padding-bottom: 10px;
-  }
-  .card .content p {
-    font-size: 1.6rem;
-    line-height: 25px;
-  }
+
   .card .content {
     transform: translateY(100%);
     opacity: 0;
@@ -56,7 +44,7 @@
     opacity: 1;
   }
   
-  .card:hover h2, 
+  .card:hover .department-header, 
   .card:hover span {
     opacity: 0;
   }

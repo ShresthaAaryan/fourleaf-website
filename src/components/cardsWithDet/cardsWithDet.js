@@ -14,7 +14,7 @@ export default function CardsWithDet({ item }) {
   return (
     <div className="cardBox">
       <div className="card">
-        <h2>{item.Department}</h2>
+        <h2 className="department-header">{item.Department}</h2>
 
         <div className="content">
           <p>{item.Detail}</p>
