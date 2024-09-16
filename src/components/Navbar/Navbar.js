@@ -28,7 +28,7 @@ export default function Navbar() {
   const pathname = usePathname()
   return (
     <Disclosure as="nav" className="bgImg bg-white ">
-      <div className="h-[190px] pt-[100px] mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div className="h-[200px] pt-[100px] mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         {/* Conditionally render the background image only on the homepage */}
         {pathname === "/" && (
           <Image
