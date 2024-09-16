@@ -24,7 +24,6 @@ export default function Home() {
         </h1>
       </div>
     </div>
-
     <Body/>
     <Testimonial/>
     <br></br>

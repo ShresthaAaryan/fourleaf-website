@@ -14,12 +14,15 @@
   @media screen and (max-width: 480px) {
     .body-container{
         margin: 2rem;
-        margin-top: 8rem;
+        margin-top: 4rem;
     }
 
     .heading-primary {
-      font-size: 2.5rem;
+      font-size: 2rem;
       padding: 0;
+    }
+    .heading-top{
+      padding-top: 20px;
     }
   
     .description {

@@ -34,7 +34,7 @@ export default function Navbar() {
           <Image
             alt="background"
             src={background}
-            className="hidden sm:block absolute ml-[400px] h-[53rem] w-[1000px] mt-[-100px] mx-auto  ola"
+            className="hidden sm:block absolute ml-[400px] h-[55rem] w-[66rem] mt-[-100px] mx-auto  ola"
           />
         )}
         <div className="relative flex h-16 items-center justify-between">

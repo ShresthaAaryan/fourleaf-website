@@ -1,0 +1,62 @@
+.cardBox {
+    width: 15rem;
+    height: 10rem;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  .card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #21933d;
+    overflow: hidden;
+    padding: 20px;
+    cursor: pointer;
+  }
+  .card h2, span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: 800;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  span {
+    top: 75%;
+  }
+  
+  .card .content h3 {
+    font-size: 3rem;
+    padding-bottom: 10px;
+  }
+  .card .content p {
+    font-size: 1.6rem;
+    line-height: 25px;
+  }
+  .card .content {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .card:hover .content {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .card:hover h2, 
+  .card:hover span {
+    opacity: 0;
+  }

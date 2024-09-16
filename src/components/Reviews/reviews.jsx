@@ -132,7 +132,7 @@ const Reviews = () => {
 
   return (
     <div className="testimonials-container">
-      <h2 className="section-title">Testimonials</h2>
+      <h2 className="section-title text-green-400">Testimonials</h2>
       <div className="testimonials">
         <button className="nav-button left" onClick={handlePrev}>❮</button>
         {testimonialsData.slice(currentIndex, currentIndex + 3).map((testimonial) => (
