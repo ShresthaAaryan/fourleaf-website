@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image"; // Import Image from next/image
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -36,10 +36,11 @@ export default function About() {
                 <Image
                   className="rounded-full mb-4"
                   src={member.image}
-                  alt={member.name}
+                  alt={`Photo of ${member.name}, ${member.position}`}
                   width={96}
                   height={96}
-                  style={{ objectFit: "cover" }} // Updated style
+                  style={{ objectFit: "cover" }}
+                  priority
                 />
                 <h3 className="text-xl font-semibold text-gray-800">
                   {member.name}
@@ -54,8 +55,6 @@ export default function About() {
   );
 }
 
-
-// Adding image src relative to the public folder
 const team = [
   {
     name: "Shakil Shrestha",
