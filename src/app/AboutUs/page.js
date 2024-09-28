@@ -60,36 +60,36 @@ const team = [
   {
     name: "Shakil Shrestha",
     position: "CEO",
-    image: "/team/shakil.jpg",
+    image: "/team/Shakil.jpg",
   },
   {
     name: "Anju Shrestha",
     position: "HOD-Operations",
-    image: "/team/anju.jpg",
+    image: "/team/Anju.jpg",
   },
   {
     name: "Samira Shrestha",
     position: "HOD-Lead Conversion",
-    image: "/team/samira.jpg",
+    image: "/team/Samira.jpg",
   },
   {
     name: "Alish Shrestha",
     position: "HOD-Sales",
-    image: "/team/alish.jpg",
+    image: "/team/Alish.jpg",
   },
   {
     name: "Palistha Shrestha",
     position: "HOD-R&D",
-    image: "/team/palistha.jpg",
+    image: "/team/Palistha.jpg",
   },
   {
     name: "Pranesh Maharjan",
     position: "Human Resources Manager",
-    image: "/team/pranesh.jpg",
+    image: "/team/Pranesh.jpg",
   },
   {
     name: "Yasasvi Bhochhibhoya",
     position: "Content Creation Specialist",
-    image: "/team/yasasvi.jpg",
+    image: "/team/Yasasvi.jpg",
   },
 ];
