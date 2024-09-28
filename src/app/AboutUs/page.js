@@ -1,75 +1,98 @@
-import Image from "next/image";
-import Team1 from "../../../public/Images/team1.png";
+// pages/about.js
+import React from "react";
+import Image from "next/image"; // Import Image from next/image
 
-export default function AboutUs() {
+const About = () => {
   return (
-    <div className="bg-gray-100 p-4 sm:p-8">
-      <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center md:items-start justify-between">
-          {/* Left Section */}
-          <div className=" w-full mb-8 md:mb-0">
-            <h1 className="text-4xl text-center sm:text-7xl sm:text-start font-bold text-green-600 mb-2">
-              At Four Leaf Clover,
-            </h1>
-            <h2 className="text-4xl text-center sm:text-7xl sm:text-start font-extrabold text-gray-500 mb-6">
-              We Deliver
-            </h2><br/><br/>
-            <div className="bg-green-700 border rounded-t-full flex items-center justify-center">
-              <Image
-                className="max-h-full"
-                alt="Team"
-                src={Team1}
-              />
-            </div>
-          </div>
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl w-full">
+        <h1 className="text-5xl font-bold text-center text-green-700 mb-6">
+          About Us
+        </h1>
+        <p className="text-lg text-gray-700 mb-8 text-center md:text-start">
+          Four Leaf Clover Pvt. Ltd. is a business process outsourcing company
+          that provides its clients with services such as accounting, email and
+          social media marketing, lead generation and conversion, content
+          creation, and client servicing. Education organizations, schools, and
+          universities may save expenses, offer superior customer service, and
+          free up resources to concentrate on more important tasks by
+          streamlining their operations.
+        </p>
+        <p className="text-lg text-gray-700 mb-8 text-center md:text-start">
+          As a BPO service provider, Four Leaf Clover aligns its values with
+          that of its clients before undertaking the responsibility of
+          representing the client's business to their consumers, ensuring a
+          consistent and seamless experience.
+        </p>
 
-          {/* Right Section */}
-          <div className="w-full md:ml-28 flex flex-col space-y-4 md:mt-32">
-            <div className="grid grid-cols-2 gap-20 mb-6">
-              <div className="text-left">
-                <p className="text-2xl sm:text-5xl font-bold text-green-600 text-center">
-                  10,000 +
-                </p>
-                <p className="text-xs sm:text-xl text-gray-600 text-center">
-                  Visa Applications
-                </p>
+        <div className="my-12">
+          <h2 className="text-5xl font-bold text-center text-green-700 mb-6">
+            Our Team
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {team.map((member, index) => (
+              <div
+                key={index}
+                className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center"
+              >
+                <Image
+                  className="rounded-full mb-4"
+                  src={member.image}
+                  alt={member.name}
+                  width={96} // Adjust width
+                  height={96} // Adjust height
+                  objectFit="cover" // Maintain aspect ratio and cover the space
+                />
+                <h3 className="text-xl font-semibold text-gray-800">
+                  {member.name}
+                </h3>
+                <p className="text-gray-600">{member.position}</p>
               </div>
-              <div className="text-left">
-                <p className="text-2xl sm:text-5xl font-bold text-green-600 text-center">
-                  10,000+
-                </p>
-                <p className="text-xs sm:text-xl text-gray-600 text-center">COE Issued</p>
-              </div>
-              <div className="text-left">
-                <p className="text-2xl sm:text-5xl font-bold text-green-600 text-center">
-                  100+
-                </p>
-                <p className="text-xs sm:text-xl text-gray-600 text-center">
-                  Daily Virtual Reception Calls
-                </p>
-              </div>
-              <div className="text-left">
-                <p className="text-2xl sm:text-5xl font-bold text-green-600 text-center">
-                  15,000 +
-                </p>
-                <p className="text-xs sm:text-xl text-gray-600 text-center">
-                  College Applications
-                </p>
-              </div>
-              <div className="mb-4">
-                <p className="text-lg sm:text-5xl font-bold text-green-600 text-center">$$$</p>
-                <p className="text-xs sm:text-xl text-gray-600 text-center">
-                  Thousands of Dollars Saved on Operating Cost
-                </p>
-              </div>
-              <div>
-                <p className="text-lg sm:text-5xl font-bold text-green-600 text-center">30%</p>
-                <p className="text-xs sm:text-xl text-gray-600 text-center">Lead Conversion</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
+
+// Adding image src relative to the public folder
+const team = [
+  {
+    name: "Shakil Shrestha",
+    position: "CEO",
+    image: "/team/shakil.jpg",
+  },
+  {
+    name: "Anju Shrestha",
+    position: "HOD-Operations",
+    image: "/team/anju.jpg",
+  },
+  {
+    name: "Samira Shrestha",
+    position: "HOD-Lead Conversion",
+    image: "/team/samira.jpg",
+  },
+  {
+    name: "Alish Shrestha",
+    position: "HOD-Sales",
+    image: "/team/alish.jpg",
+  },
+  {
+    name: "Palistha Shrestha",
+    position: "HOD-R&D",
+    image: "/team/palistha.jpg",
+  },
+  {
+    name: "Pranesh Maharjan",
+    position: "Human Resources Manager",
+    image: "/team/pranesh.jpg",
+  },
+  {
+    name: "Yasasvi Bhochhibhoya",
+    position: "Content Creation Specialist",
+    image: "/team/yasasvi.jpg",
+  },
+];
+
+export default About;

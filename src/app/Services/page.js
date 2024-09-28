@@ -24,7 +24,7 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-6">
       <div className="max-w-6xl mx-auto py-12">
-        <h1 className="text-3xl font-bold text-center text-green-400 mb-12">
+        <h1 className="text-3xl font-bold text-center text-green-700 mb-12">
           Our Services
         </h1>
         <div className="grid gap-8 lg:grid-cols-2">
@@ -33,7 +33,7 @@ const Services = () => {
               key={index}
               className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
             >
-              <h2 className="text-xl font-semibold text-green-400 mb-4">
+              <h2 className="text-xl font-semibold text-green-700 mb-4">
                 {service.title}
               </h2>
               <p className="text-gray-700">{service.description}</p>
