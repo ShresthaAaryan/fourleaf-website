@@ -5,7 +5,7 @@ export default function Testimonial() {
     return (
         <div className="uppertestimonial flex flex-col space-y-12">
             <div className="flex flex-col lg:flex-row items-center lg:space-x-12 justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                <div className="flex-3 lg:w-[400px] lg:h-[400px] w-[250px] h-[250px] bg-green-700 border border-green-700 rounded-full flex items-center justify-center">
+                <div className="flex-3 lg:w-[400px] lg:h-[400px] w-[250px] h-[250px] bg-green-700 border border-green-700 rounded-full flex items-center justify-center overflow-hidden">
                     <Image
                         className="w-[400px] lg:w-[300px] h-auto"
                         alt="kt"
@@ -32,7 +32,7 @@ export default function Testimonial() {
                         Person Two, Company Name
                     </h4>
                 </div>
-                <div className="flex-3 lg:w-[400px] lg:h-[400px] w-[250px] h-[250px] bg-green-700 border border-green-700 rounded-full flex items-center justify-center">
+                <div className="flex-3 lg:w-[400px] lg:h-[400px] w-[250px] h-[250px] bg-green-700 border border-green-700 rounded-full flex items-center justify-center overflow-hidden">
                     <Image
                         className="w-[200px] lg:w-[300px] h-auto"
                         alt="kt"
