@@ -21,10 +21,9 @@ export default function About(){
         <p className="text-lg text-gray-700 mb-8 text-center md:text-start">
           As a BPO service provider, Four Leaf Clover aligns its values with
           that of its clients before undertaking the responsibility of
-          representing the client's business to their consumers, ensuring a
+          representing the client&rsquo;s business to their consumers, ensuring a
           consistent and seamless experience.
         </p>
-
         <div className="my-12">
           <h2 className="text-5xl font-bold text-center text-green-700 mb-6">
             Our Team
