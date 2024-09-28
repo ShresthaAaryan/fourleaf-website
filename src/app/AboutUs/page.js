@@ -1,6 +1,12 @@
 import React from "react";
 import Image from "next/image";
-
+import Shakil from "../../../public/team/Shakil.JPG"
+import Anju from "../../../public/team/Anju.JPG"
+import Samira from "../../../public/team/Samira.JPG"
+import Alish from "../../../public/team/Alish.JPG"
+import Palistha from "../../../public/team/Palistha.JPG"
+import Pranesh from "../../../public/team/Pranesh.JPG"
+import Yasasvi from "../../../public/team/Yasasvi.JPG"
 export default function About() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
@@ -35,7 +41,7 @@ export default function About() {
               >
                 <Image
                   className="rounded-full mb-4"
-                  src={member.image}
+                  src={member.src}
                   alt={`Photo of ${member.name}, ${member.position}`}
                   width={96}
                   height={96}
@@ -59,36 +65,36 @@ const team = [
   {
     name: "Shakil Shrestha",
     position: "CEO",
-    image: "/team/Shakil.jpg",
+    src: Shakil,
   },
   {
     name: "Anju Shrestha",
     position: "HOD-Operations",
-    image: "/team/Anju.jpg",
+    src: Anju,
   },
   {
     name: "Samira Shrestha",
     position: "HOD-Lead Conversion",
-    image: "/team/Samira.jpg",
+    src: Samira,
   },
   {
     name: "Alish Shrestha",
     position: "HOD-Sales",
-    image: "/team/Alish.jpg",
+    src: Alish,
   },
   {
     name: "Palistha Shrestha",
     position: "HOD-R&D",
-    image: "/team/Palistha.jpg",
+    src: Palistha,
   },
   {
     name: "Pranesh Maharjan",
     position: "Human Resources Manager",
-    image: "/team/Pranesh.jpg",
+    src: Pranesh,
   },
   {
     name: "Yasasvi Bhochhibhoya",
     position: "Content Creation Specialist",
-    image: "/team/Yasasvi.jpg",
+    src: Yasasvi,
   },
 ];
