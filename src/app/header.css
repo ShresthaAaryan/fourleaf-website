@@ -1,8 +1,8 @@
- /* FOr Mobile */
+ /* For Mobile */
  @media(max-width: 480px) 
 {
     .big-text .bigg {
-        font-size: 50px; 
+        font-size: 4rem; 
         text-align: center;
         align-content: center;
         margin: 0;

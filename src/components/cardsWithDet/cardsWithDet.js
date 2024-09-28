@@ -9,7 +9,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
-
+import '../groupCard/groupCard.css'
 export default function CardsWithDet({ item }) {
   return (
     <div className="cardBox">

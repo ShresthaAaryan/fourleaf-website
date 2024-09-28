@@ -6,8 +6,8 @@ import "../../app/bodys.css"
 
 const Body = () => {
   return (
-    <div className="m-20 mt-96 body-container">
-        <h1 className=" text-green-400 text-7xl font-bold text-center heading-primary heading-top p-4">
+    <div className="m-20 md:mt-96 body-container">
+        <h1 className=" text-green-600 text-7xl font-extrabold text-center heading-primary heading-top p-4">
             Outsource Your 
         </h1>
         <h1 className="text-gray-400 text-7xl font-bold text-center heading-primary p-4">
