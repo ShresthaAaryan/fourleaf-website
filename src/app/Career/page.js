@@ -1,7 +1,7 @@
 // pages/careers.js
 import React from 'react';
 
-const Careers = () => {
+export default function Careers () {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl w-full">
@@ -58,5 +58,3 @@ const jobOpenings = [
     supervisor: 'HOD: Lead Conversion',
   },
 ];
-
-export default Careers;

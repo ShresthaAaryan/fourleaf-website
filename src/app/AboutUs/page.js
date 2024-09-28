@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image"; // Import Image from next/image
 
-const About = () => {
+export default function About(){
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl w-full">
@@ -94,5 +94,3 @@ const team = [
     image: "/team/yasasvi.jpg",
   },
 ];
-
-export default About;
