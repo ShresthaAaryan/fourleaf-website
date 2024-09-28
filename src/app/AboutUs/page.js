@@ -1,8 +1,7 @@
-// pages/about.js
 import React from "react";
 import Image from "next/image"; // Import Image from next/image
 
-export default function About(){
+export default function About() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl w-full">
@@ -38,9 +37,9 @@ export default function About(){
                   className="rounded-full mb-4"
                   src={member.image}
                   alt={member.name}
-                  width={96} // Adjust width
-                  height={96} // Adjust height
-                  objectFit="cover" // Maintain aspect ratio and cover the space
+                  width={96}
+                  height={96}
+                  style={{ objectFit: "cover" }} // Updated style
                 />
                 <h3 className="text-xl font-semibold text-gray-800">
                   {member.name}
@@ -53,7 +52,8 @@ export default function About(){
       </div>
     </div>
   );
-};
+}
+
 
 // Adding image src relative to the public folder
 const team = [
