@@ -7,7 +7,7 @@ export default function Details() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between">
           {/* Left Section */}
-          <div className=" w-full mb-8 md:mb-0">
+          <div className=" w-full mb-8 md:mb-0 ">
             <h1 className="text-4xl text-center sm:text-7xl sm:text-start font-bold text-green-600 mb-2">
               At Four Leaf Clover,
             </h1>
