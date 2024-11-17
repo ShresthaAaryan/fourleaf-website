@@ -32,12 +32,12 @@ export default function About() {
           </p>
         </div><br/><br/>
         <div>
-          <h2 className="text-5xl font-bold text-center text-green-700 mb-6 ">
+          <h2 className="text-5xl font-bold text-center text-green-700 mb-6">
             Message From The CEO
           </h2>
           <div className="flex flex-col lg:flex-row items-center lg:space-x-12 justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
             <div className="flex-4 texttestimonial flex flex-col w-full lg:w-[900px] text-center lg:text-left mt-6 lg:mt-0 pl-4">
-              <p className="text-base lg:text-lg">
+              <p className="text-black text-xl text-center description">
                   At Four Leaf Clover, we understand your challenges and are committed to your success. With over 4 years of experience in marketing and business development, and a dedicated team of experts, we provide more than just outsourcing—we become your strategic partner. Our digital solutions fit seamlessly into your business, helping you streamline operations, reduce costs, and focus on growth. With our reliable, transparent services, tailored to meet your unique needs, we bring innovation and expertise to empower your business.
                   In today’s fast-paced business landscape, adapting and focusing on growth opportunities is vital. By entrusting us with your outsourcing needs, you gain the freedom to focus on what truly matters—growing your business. We believe in the power of partnership and innovation, bringing expert solutions tailored to meet your unique challenges.
                   Our dedicated professionals are here to deliver results that not only meet but exceed expectations. Together, we’ll build the foundation for your success, empowering your organization to thrive in an ever-changing world.

@@ -15,7 +15,7 @@ const Body = () => {
             Routine Operations
         </h1>
         <br/>
-        <p className="text-black text-2xl text-center mt-16 description ">
+        <p className="text-black text-2xl text-center mt-16 description">
             Four Leaf Clover is a Business Process Outsourcing (BPO) service provider in the educational sector of Australia. We help to streamline the processes of educational agencies, colleges and universities to help them cut down costs, provide excellent customer support and free up resources to help them focus on business growth.
         </p><br/><br/>
         <GroupCard/><br/><br/><br/>
