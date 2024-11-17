@@ -14,7 +14,7 @@ export default function Careers () {
 
         <div className="my-12">
           <h2 className="text-2xl font-bold text-center text-green-700 mb-6">
-            Current Openings
+            Current Openings:
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {jobOpenings.map((job, index) => (
@@ -40,7 +40,6 @@ export default function Careers () {
   );
 };
 
-// Job openings data
 const jobOpenings = [
   {
     title: 'Client Servicing Officer',
