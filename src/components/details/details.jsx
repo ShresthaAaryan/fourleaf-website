@@ -28,7 +28,7 @@ export default function Details() {
             <div className="grid grid-cols-2 gap-20 mb-6">
               <div className="text-left">
                 <p className="text-2xl sm:text-5xl font-bold text-green-600 text-center">
-                  10,000 +
+                  10,000+
                 </p>
                 <p className="text-xs sm:text-xl text-gray-600 text-center">
                   Visa Applications

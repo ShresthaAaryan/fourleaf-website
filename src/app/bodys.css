@@ -64,11 +64,18 @@
       width: 15rem;
       height: 10em;
     }
+    .heading-primary{
+      padding: 2rem;
+    }
   }
 
   @media (max-width: 480px) {
     .cardBox{
       height: 6rem;
+    }
+    .heading-primary{
+      padding: 2rem;
+      padding-bottom: 0;
     }
   }
   @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -78,5 +85,8 @@
     }
     .body-container{
       margin-top: 0;
+    }
+    .heading-primary{
+      padding: rem;
     }
 }

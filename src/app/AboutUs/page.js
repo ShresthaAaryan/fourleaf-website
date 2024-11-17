@@ -11,7 +11,7 @@ import Yasasvi from "../../../public/team/Yasasvi.JPG";
 export default function About() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl w-full">
+      <div className="max-w-8xl w-full">
         <h1 className="text-4xl md:text-5xl font-bold text-center text-green-700 mb-8">
           About Us
         </h1>
@@ -37,32 +37,25 @@ export default function About() {
             Message From The CEO
           </h2>
           <div className="flex flex-col lg:flex-row items-center lg:space-x-12 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 px-6 py-8">
-            <div className="flex-1 text-center lg:text-left">
-              <p className="text-base md:text-lg text-gray-700">
-                At Four Leaf Clover, we understand your challenges and are committed
-                to your success. With over 4 years of experience in marketing and
-                business development, and a dedicated team of experts, we provide
-                more than just outsourcing—we become your strategic partner. Our
-                digital solutions fit seamlessly into your business, helping you
-                streamline operations, reduce costs, and focus on growth.
-              </p>
-              <p className="mt-4 text-base md:text-lg text-gray-700">
-                By entrusting us with your outsourcing needs, you gain the freedom
-                to focus on what truly matters—growing your business. Together, we’ll
-                build the foundation for your success, empowering your organization
-                to thrive in an ever-changing world.
-              </p>
-            </div>
-            <div className="flex-1 mt-6 lg:mt-0 flex justify-center">
-              <Image
-                alt="CEO"
-                src={Shakil}
-                width={250}
-                height={250}
-                objectFit="cover"
-              />
-            </div>
-          </div>
+  <div className="flex-1 text-center lg:text-center lg:ml-24">
+    <p className="text-base md:text-lg text-gray-700">
+      At Four Leaf Clover, we understand your challenges and are committed to your success. With over 4 years of experience in marketing and business development, and a dedicated team of experts, we provide more than just outsourcing—we become your strategic partner. Our digital solutions fit seamlessly into your business, helping you streamline operations, reduce costs, and focus on growth.
+    </p>
+    <p className="mt-4 text-base md:text-lg text-gray-700">
+      By entrusting us with your outsourcing needs, you gain the freedom to focus on what truly matters—growing your business. Together, we’ll build the foundation for your success, empowering your organization to thrive in an ever-changing world.
+    </p>
+  </div>
+  <div className="flex-1 mt-6 lg:mt-0 flex justify-center">
+    <Image
+      alt="CEO"
+      src={Shakil}
+      width={250}
+      height={250}
+      objectFit="cover"
+    />
+  </div>
+</div>
+
         </div>
         <div className="my-16">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-green-700 mb-8">

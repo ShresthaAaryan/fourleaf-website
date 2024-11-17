@@ -17,6 +17,7 @@ const navigation = [
   { name: "About Us", href: "/AboutUs", current: false },
   { name: "Services", href: "/Services", current: false },
   { name: "Careers", href: "/Career", current: false },
+  { name: "Contact Us", href: "/Contact", current: false },
 ];
 
 function classNames(...classes) {
@@ -53,7 +54,6 @@ export default function Navbar() {
             </DisclosureButton>
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            {/* logo */}
             <div className="flex flex-shrink-0 items-center">
               <Link href="/">
                 <Image
@@ -83,13 +83,7 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-
           <div className="absolute inset-y-0 right-0 mt-[-20px] flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <Link href="/Contact">
-              <button className=" bg-green-500 border-solid border-[1.5px] border-green-500 text-white font-bold h-[40px] w-[100px] rounded-md">
-                Contact us
-              </button>
-            </Link>
           </div>
         </div>
       </div>
@@ -105,7 +99,7 @@ export default function Navbar() {
               className={classNames(
                 item.current
                   ? "bg-gray-900 text-green-500"
-                  : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                  : "text-green-400 hover:bg-green-700 hover:text-white",
                 "block rounded-md px-3 py-2 text-base font-medium"
               )}
             >

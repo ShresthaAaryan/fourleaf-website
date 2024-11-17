@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Footer from "@/components/footer/Footer";
 import Testimonial from "@/components/Testimonial/Testimonial";
-import Reviews from "@/components/Reviews/reviews";
 import './header.css';
 import Body from "@/components/body/Body";
 
