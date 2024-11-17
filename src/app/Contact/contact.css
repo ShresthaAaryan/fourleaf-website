@@ -66,6 +66,10 @@ textarea {
     width: 100%;
   }
 
+  .contact-header h1 {
+    font-size: 4rem;
+  }
+
   iframe{
     width: 100%;
   }
