@@ -50,7 +50,7 @@ export default function Details() {
               </div>
               <div className="text-left">
                 <p className="text-2xl sm:text-5xl font-bold text-green-600 text-center">
-                  15,000 +
+                  15,000+
                 </p>
                 <p className="text-xs sm:text-xl text-gray-600 text-center">
                   College Applications
