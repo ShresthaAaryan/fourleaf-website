@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useEffect } from "react";
 import {
@@ -6,7 +6,7 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from "@headlessui/react";
-import { useRouter } from "next/navigation"; 
+import { useRouter } from "next/navigation";
 import background from "/public/Images/background.png";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
@@ -35,12 +35,18 @@ export default function Navbar() {
     } else {
       document.body.style.overflowX = ""; // Re-enable scrolling
     }
-
-    // Clean up on unmount
     return () => {
       document.body.style.overflowX = "";
     };
   }, [pathname]);
+
+  const handleLogoClick = (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <Disclosure as="nav" className="bgImg bg-gray-100">
@@ -69,13 +75,13 @@ export default function Navbar() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
-              <Link href="/">
+              <a href="/" onClick={handleLogoClick}>
                 <Image
                   alt="Your Company"
                   src={Logo}
-                  className="h-[130px] w-auto mt-[-50px] img1"
+                  className="h-[130px] w-auto mt-[-50px] img1 cursor-pointer"
                 />
-              </Link>
+              </a>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
@@ -88,7 +94,7 @@ export default function Navbar() {
                       item.current
                         ? "text-green-600"
                         : "text-green-600 hover:bg-green-200 hover:text-green-900",
-                      "rounded-md px-3 py-2 text-lg font-bold text-[22.5px] text-center"
+                      "rounded-md px-3 py-2 text-xl font-bold text-[23px] text-center"
                     )}
                   >
                     {item.name}
@@ -124,6 +130,7 @@ export default function Navbar() {
     </Disclosure>
   );
 }
+
 
 
 

@@ -8,7 +8,7 @@ import Shakil from "../../../public/team/Shakil.JPG";
 
 const Body = () => {
   return (
-    <div className="m-20 md:mt-96 body-container">
+    <div className="m-20 md:mt-72 body-container">
         <h1 className=" text-green-600 text-7xl font-extrabold text-center heading-primary heading-top pb-0">
             Outsource        
         </h1>
