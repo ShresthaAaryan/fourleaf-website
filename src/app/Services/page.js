@@ -1,5 +1,6 @@
 // pages/services.tsx
 import React from 'react';
+import Footer from "@/components/footer/Footer";
 
 const services = [
   {
@@ -7,8 +8,12 @@ const services = [
     description: `One of our key functions is to provide information to the clients through our information centre. We set up information sessions for the clients through our team of experts to provide in-depth information including entry requirements, course options, and cost involved. One to one interaction is an important part of our lead conversion process.`,
   },
   {
-    title: 'Social Media and Email Marketing + Content, SEO, Google Ads',
+    title: 'Social Media and Email Marketing + Content',
     description: `We work closely with our clients to understand their marketing goals and objectives and run targeted ad campaigns. This includes campaigns on social media, content marketing, SEO, Google ads and mass email campaigns to promote colleges and courses.`,
+  },
+  {
+    title: 'SEO, Google Ads',
+    description: 'Our team of experts creates engaging content for our clients to promote their colleges and courses'
   },
   {
     title: 'Lead Generation and Conversion',
@@ -22,9 +27,10 @@ const services = [
 
 export default function Services () {
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
+    <>
+    <div className="min-h-screen p-6">
       <div className="max-w-6xl mx-auto py-12">
-        <h1 className="text-3xl font-bold text-center text-green-700 mb-12">
+        <h1 className="text-5xl font-bold text-center text-green-700 mb-12">
           Our Services
         </h1>
         <div className="grid gap-8 lg:grid-cols-2">
@@ -42,6 +48,8 @@ export default function Services () {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 

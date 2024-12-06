@@ -25,13 +25,12 @@ const Footer = () => (
         <h1 className="app__footer-headtext">Contact Us</h1>
         <h3 className="p__opensans">Ichhamati Galli 28, Kathmandu 44600, Nepal</h3>
         <h4 className="p__opensans">marketing@fourleafclover.com.np</h4>
-        <h4 className="p__opensans">+977 980 - 8571158</h4>
-        {/* <h4 className='p__opensans'>ABN: 63638902593</h4> */}
+        <h4 className="p__opensans">+977 970 - 9283103</h4>
       </div>
 
       <div className="app__footer-links_logo">
         <Image src={Logo} alt="footer_logo" width={150} height={150} />
-        {/* <p className="p__opensans">&quot;The best way to find yourself is to lose yourself in the service of others.&quot;</p> */}
+        <p className="p__opensans">&quot;Connect with us on Social Media:&quot;</p> 
         <div className="app__footer-links_icons">
           <FiFacebook onClick={face} />
           <FiInstagram onClick={insta} />
@@ -47,7 +46,7 @@ const Footer = () => (
         <p className="p__opensans">Closed</p>
       </div>
     </div>
-    <div className="footer__copyright">    
+    {/* <div className="footer__copyright">    
       <hr  style={{
           color: 'black',
           backgroundColor: 'black',
@@ -55,8 +54,7 @@ const Footer = () => (
           width: '100%',
           borderColor : 'black'
       }}/>
-    </div>
-
+    </div> */}
   </div>
 );
 

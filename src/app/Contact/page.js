@@ -1,6 +1,6 @@
 "use client";
 import Navbar from '@/components/Navbar/Navbar';
-import Footer from '@/components/footer/Footer';
+import Footer from "@/components/footer/Footer";
 import React, { useState } from 'react';
 import './contact.css';
 
@@ -58,24 +58,25 @@ function Contact() {
   };
 
   return (
-    <div className="contact-page bg-gray-50">
+    <>
+    <div className="contact-page">
       <div className="contact-header">
-          <h1>Contact Us</h1>
+        <h1>Contact Us</h1>
       </div>
-      
+
       <div className="contact-content">
         <div className="map-container">
           <iframe
-              title="Google Map"
-              loading="lazy"
-              allowFullScreen
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d883.1149048660317!2d85.32103663226579!3d27.703091928055542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb199f55d5f795%3A0xa6dbb597faeda135!2sFour%20Leaf%20Clover%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1725788575275!5m2!1sen!2sin"
-              allow="fullscreen"
-              aria-hidden="false"
-              tabIndex="0"
-            ></iframe>
+            title="Google Map"
+            loading="lazy"
+            allowFullScreen
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d883.1149048660317!2d85.32103663226579!3d27.703091928055542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb199f55d5f795%3A0xa6dbb597faeda135!2sFour%20Leaf%20Clover%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1725788575275!5m2!1sen!2sin"
+            allow="fullscreen"
+            aria-hidden="false"
+            tabIndex="0"
+          ></iframe>
         </div>
-        <div className="form-container"><br/>
+        <div className="form-container"><br />
           <h2>Feedback</h2>
           <form onSubmit={handleSubmit}>
             <input type="text" id="name" name="name" placeholder="Name" value={name} onChange={handleChange} required />
@@ -85,9 +86,10 @@ function Contact() {
             <button type="submit" className='button'>Send</button>
           </form>
         </div>
-      </div><br/><br/>
-      <Footer/>
+      </div><br /><br />
     </div>
+    <Footer />
+    </>
   );
 }
 

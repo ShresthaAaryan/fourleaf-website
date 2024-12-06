@@ -1,9 +1,11 @@
 // pages/careers.js
 import React from 'react';
+import Footer from "@/components/footer/Footer";
 
 export default function Careers () {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
+    <>
+    <div className="flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl w-full">
         <h1 className="text-4xl font-bold text-center text-green-700 mb-6">
           Careers at Four Leaf Clover Pvt. Ltd.
@@ -37,6 +39,8 @@ export default function Careers () {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 

@@ -59,6 +59,7 @@
     margin-bottom: 1rem;
   }
   
+  
   @media (min-width: 480px) {
     .cardBox {
       width: 15rem;
