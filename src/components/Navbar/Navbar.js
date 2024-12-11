@@ -10,7 +10,7 @@ import { useRouter } from "next/navigation";
 import background from "/public/Images/background.png";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import Logo from "../../images/logo1.png";
+import Logo from "../../images/logo2.png";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
