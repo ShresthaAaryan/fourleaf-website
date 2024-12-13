@@ -23,7 +23,7 @@ export default function GroupCard() {
                         To provide reliable, web-based customer experiences that align with clients&apos; internal processes, while delivering expert outsourcing solutions with a goal to streamline operations, reduce costs, and enhance customer service, empowering organizations to focus on growth and success.
                     </p>
                 </div>
-                <div className="flex-1 mt-6 lg:mt-0 flex justify-center font-bold">
+                <div className="flex-1 mt-6 lg:mt-0 flex justify-center font-bold text-center">
                     <p>Optimizing Operations, Maximizing Growth</p>
                 </div>
             </div>
