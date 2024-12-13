@@ -20,7 +20,7 @@ export default function Testimonial() {
                         <br />
                     </p>
                     <h4 className="block mt-4 lg:text-lg text-right font-bold lg:text-center justify-center">
-                        Bijaya Gurung, Company Name
+                        Bijaya Gurung
                     </h4>
                 </div>
             </div>
@@ -31,7 +31,7 @@ export default function Testimonial() {
                         <br />
                     </p>
                     <h4 className="block mt-4 lg:text-lg font-bold text-right lg:text-center">
-                        Luisa Veibete, Company Name
+                        Luisa Veibete
                     </h4>
                 </div>
                 <div className="flex-3 lg:w-[400px] lg:h-[400px] w-[250px] h-[250px] bg-green-700 border border-green-700 rounded-full flex items-center justify-center overflow-hidden">
