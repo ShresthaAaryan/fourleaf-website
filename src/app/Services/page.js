@@ -4,24 +4,52 @@ import Footer from "@/components/footer/Footer";
 
 const services = [
   {
-    title: 'Client Servicing & Counselling',
-    description: `One of our key functions is to provide information to the clients through our information centre. We set up information sessions for the clients through our team of experts to provide in-depth information including entry requirements, course options, and cost involved. One to one interaction is an important part of our lead conversion process.`,
+    title: '1. Social Media & Email Marketing ',
+    description: (
+      <>
+        We collaborate closely with clients to understand their marketing goals and develop tailored strategies to reach their target audience. Our social media and email marketing services are designed to build brand awareness and engage potential clients. Through targeted social media campaigns across major platforms, we create engaging posts, visuals, and interactive content to keep audiences connected and informed.
+        <br /><br />
+        Our email marketing campaigns deliver personalized updates and promotions directly to clients’ inboxes, fostering strong connections and driving conversions. This direct communication helps our clients stay engaged with their audience, ensuring their message resonates and leads to meaningful interactions.
+      </>
+    ),
   },
   {
-    title: 'Social Media and Email Marketing + Content',
-    description: `We work closely with our clients to understand their marketing goals and objectives and run targeted ad campaigns. This includes campaigns on social media, content marketing, SEO, Google ads and mass email campaigns to promote colleges and courses.`,
+    title: '2. Client Servicing & Counselling ',
+    description: (
+      <>
+        One of our key functions is to provide comprehensive information to clients through our information center. We organize informative sessions led by our team of experts. These sessions are tailored to address individual concerns, helping clients understand the necessary steps for a smooth transition.
+        <br /><br />
+        Our approach emphasizes one-on-one interaction. This personalized engagement allows us to respond to unique questions, offer customized advice, and build trust, ensuring clients feel supported and confident in their decision-making process.
+      </>
+    ),
   },
   {
-    title: 'SEO, Google Ads',
-    description: 'Our team of experts creates engaging content for our clients to promote their colleges and courses'
+    title: '3. Content Writing, SEO, & Google Ads ',
+    description: (
+      <>
+        We leverage content marketing, SEO, and Google Ads to ensure our clients’ visibility in the digital landscape. Our content team develops high-quality, relevant materials that resonate with audiences while aligning with clients’ marketing objectives. This includes blog posts, articles, and other resources that provide value and encourage client engagement.
+        <br /><br />
+        SEO practices are applied to boost organic reach and ensure our clients’ offerings rank highly in search results. Additionally, our targeted Google Ads campaigns help attract a broader audience by strategically placing ads in front of those most likely to benefit from our clients’ services.
+      </>
+    ),
   },
   {
-    title: 'Lead Generation and Conversion',
-    description: `Our targeted marketing campaigns help to generate high quality leads at a lower cost. The leads are carefully assisted in different levels throughout the sales funnel. From the first contact, we guide them through the application process, provide relevant course options and promote your institution. Over the years we have been able to achieve a conversion rate of 30% on average.`,
+    title: '4. Lead Generation and Conversion',
+    description: (
+      <>
+        Our targeted marketing campaigns are crafted to generate high-quality leads at a lower cost, maximizing return on investment. Once a lead is engaged, our team provides step-by-step guidance through the sales funnel, from initial contact to application assistance. We offer personalized support and tailored recommendations, ensuring leads feel informed and supported throughout their journey.
+        <br /><br />
+        This approach has helped us achieve an impressive conversion rate, reflecting our commitment to effective, value-driven lead nurturing and client satisfaction.
+      </>
+    ),
   },
   {
-    title: 'Accounting',
-    description: `The accounting team manages the bookkeeping for the businesses. We communicate closely with your accounts department to verify and maintain the records of all the transactions. Further, we track the fee.`,
+    title: '5. Accounting',
+    description: (
+      <>
+        Our accounting team provides comprehensive bookkeeping services to ensure accurate and organized financial records. We work closely with your accounts department to review and verify all transaction records, ensuring consistency and transparency across your financial operations. This collaborative approach allows us to identify discrepancies early, maintain up-to-date records, and ensure compliance with financial standards.
+      </>
+    ),
   },
 ];
 

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Team1 from "../../../public/Images/team1.png";
+import Team1 from "../../../public/Images/team.png";
 
 export default function Details() {
   return (
@@ -24,28 +24,30 @@ export default function Details() {
           </div>
 
           {/* Right Section */}
-          <div className="w-full md:ml-28 flex flex-col space-y-4 md:mt-32">
+          <div className="w-full md:ml-28 flex flex-col space-y-4 md:mt-18">
             <div className="grid grid-cols-2 gap-20 mb-6">
               <div className="text-left">
                 <p className="text-2xl sm:text-5xl font-bold text-green-600 text-center">
-                  10,000+
+                  8000+
                 </p>
                 <p className="text-xs sm:text-xl text-gray-600 text-center">
-                  Visa Applications
+                  Successful Client Consultations
                 </p>
               </div>
               <div className="text-left">
                 <p className="text-2xl sm:text-5xl font-bold text-green-600 text-center">
-                  10,000+
+                  2,500+
                 </p>
-                <p className="text-xs sm:text-xl text-gray-600 text-center">COE Issued</p>
+                <p className="text-xs sm:text-xl text-gray-600 text-center">
+                  Social Media Campaigns Executed
+                </p>
               </div>
               <div className="text-left">
                 <p className="text-2xl sm:text-5xl font-bold text-green-600 text-center">
-                  100+
+                  8,000+ 
                 </p>
                 <p className="text-xs sm:text-xl text-gray-600 text-center">
-                  Daily Virtual Reception Calls
+                  High-Converting SEO Articles Written
                 </p>
               </div>
               <div className="text-left">
@@ -53,13 +55,15 @@ export default function Details() {
                   15,000+
                 </p>
                 <p className="text-xs sm:text-xl text-gray-600 text-center">
-                  College Applications
+                  Leads Generated and Nurtured
                 </p>
               </div>
               <div className="mb-4">
-                <p className="text-lg sm:text-5xl font-bold text-green-600 text-center">$$$</p>
+                <p className="text-lg sm:text-5xl font-bold text-green-600 text-center">
+                  $$$
+                </p>
                 <p className="text-xs sm:text-xl text-gray-600 text-center">
-                  Thousands of Dollars Saved on Operating Cost
+                  Thousands Saved on Operational Costs for Our Clients
                 </p>
               </div>
               <div>
@@ -67,6 +71,7 @@ export default function Details() {
                 <p className="text-xs sm:text-xl text-gray-600 text-center">Lead Conversion</p>
               </div>
             </div>
+            <p>Whether it’s expert client servicing, creative content strategies, or data-driven lead generation, Four Leaf Clover ensures excellence in every step to empower your business growth.</p>
           </div>
         </div>
       </div>
